@@ -850,6 +850,10 @@ footer {
         height: 300px;
     }
 
+    .tools-title {
+        font-size: 1.2em;
+    }
+
     .tools-text {
         display: flex;
         margin-top: 25px;
