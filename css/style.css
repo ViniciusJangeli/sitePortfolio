@@ -258,13 +258,13 @@ section {
 .intro-buttons {
     width: 260px;
     display: flex;
+    gap: 15px;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .intro-button {
-    width: 120px;
-    height: 35px;
+    width: 150px;
     padding: 8px;
     background: var(--bg);
     color: var(--color-text);
@@ -276,6 +276,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 
 .intro-button:hover {
