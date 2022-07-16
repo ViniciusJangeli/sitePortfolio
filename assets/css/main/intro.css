@@ -1,0 +1,37 @@
+.intro {
+    align-items: center;
+    display: flex;
+    height: calc(100vh - 96px);
+    flex-direction: column;
+    justify-content: center;
+    padding: .5rem;
+}
+
+.intro__p, .intro__subtitle {
+    color: #F3F3F3;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+}
+
+.intro__text::before {
+    content: '.intro \007B ';
+    color: #2e3b47;
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.intro__text::after {
+    content: ' \007D ';
+    color: #2e3b47;
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.intro__title {
+    color: #00FF82;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}

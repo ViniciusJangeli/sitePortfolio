@@ -1,0 +1,32 @@
+.container {
+    font-family: 'Bai Jamjuree', sans-serif;
+    background: #0A131A;
+}
+
+.title-section::before{
+    content: '.';
+}
+
+.title-section {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    padding-bottom: .5rem;
+    padding-left: .5rem;
+}
+
+.subtitle-section {
+    font-size: 1.225rem;
+    margin-bottom: 1rem;
+    padding-left: .5rem;
+}
+
+section {
+    border-bottom: 1px solid #1d262e;
+}
+
+.copy-phrase {
+    color: #F3F3F3;
+    text-align: center;
+    padding: 2rem;
+}

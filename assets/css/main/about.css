@@ -1,0 +1,60 @@
+.about {
+    color: #F3F3F3;
+}
+
+.about__infos {
+    align-items: center;
+    background-color: #0E181F;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem .5rem;
+}
+
+.selfie {
+    background-color: #0A131A;
+    border: 5px solid #101A23;
+    border-radius: 5px;
+    height: 250px;
+    margin-bottom: 1rem;
+    width: 280px;
+}
+
+.about__name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.about__age {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.about__text {
+    border-bottom: 2px solid #293A44;
+    font-size: 1.2rem;
+    padding-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.about__text-link {
+    color: #00FF82;
+    text-decoration: none;
+}
+
+.about__text-link:hover {
+    text-decoration: underline;
+}
+
+.media-list {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.media__img{
+    fill: #00FF82;
+}

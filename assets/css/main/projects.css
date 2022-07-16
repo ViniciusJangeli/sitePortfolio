@@ -1,0 +1,99 @@
+.projects {
+    color: #F3F3F3;
+    padding-bottom: 1rem;
+}
+
+.projects__link {
+    color: #00FF82;
+    text-decoration: none;
+}
+
+.projects__link:hover {
+    text-decoration: underline;
+}
+
+.exemples {
+    display: flex;
+    justify-content: center;
+}
+
+.exemples__projects {
+    align-items: center;
+    background-color: #131a20;
+    border: 3px solid #1d262e;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    margin: 1rem;
+    width: 280px;
+}
+
+.project__image {
+    border: 2px solid #1d262e;
+    border-radius: 5px 5px 0 0;
+    height: 200px;
+    margin-bottom: 1rem;
+    width: 230px;
+}
+
+.projects__img {
+    border-radius: 5px 5px 0 0;
+    height: 200px;
+    width: 230px;
+}
+
+.project__infos {
+    width: 230px;
+}
+
+.infos__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: .5rem;
+}
+
+.infos__subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-bottom: .5rem;
+}
+
+.infos__tech-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-bottom: .5rem;
+}
+
+.infos__tech-subtitle {
+    font-size: 1rem;
+    padding-bottom: .5rem;
+}
+
+.infos__links {
+    align-items: center;
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+}
+
+.infos__button-link {
+    border-radius: 5px;
+    background-color: #00FF82;
+    color: #0A131A;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    padding: .5rem;
+    width: 80px;
+}
+
+.infos__button-link:hover {
+    background-color: #05b660;
+}
+
+.exemples__projects--right {
+    display: none;
+}

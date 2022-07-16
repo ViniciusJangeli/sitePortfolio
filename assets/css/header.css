@@ -1,0 +1,43 @@
+.header {
+    align-items: center;
+    display: flex;
+    height: 80px;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+}
+
+.header_logo {
+    height: 30px;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.btn-mobile {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+}
+
+.hamburger {
+    border-top: 3px solid #00FF82;
+    width: 30px;
+}
+
+.hamburger::before,
+.hamburger::after {
+    background: #00FF82;
+    content: "";
+    display: block;
+    height: 3px;
+    margin-top: 5px;
+    transition: 0.3s;
+    width: 30px;
+}
+
+.nav__list, .header__button {
+    left: -9999px;
+    position: absolute;
+}
