@@ -5,310 +5,259 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./assets/img/icon.svg" sizes="any">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Lato:wght@400;700&family=Major+Mono+Display&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/main/intro.css">
+    <link rel="stylesheet" href="./assets/css/main/about.css">
+    <link rel="stylesheet" href="./assets/css/main/projects.css">
+    <link rel="stylesheet" href="./assets/css/main/skills.css">
+    <link rel="stylesheet" href="./assets/css/main/contact.css">
+
     <title>Vinicius Jangeli - Desenvolvedor Front-end</title>
 </head>
 
 <body class="container">
-    <header id="home" class="intro">
-        <div class="intro-menu">
-            <div class="nav-menu">
-                <div class="logo">
-                    <p class="p-logo">Vj</p>
-                </div>
-                <nav id="nav" class="nav-bar">
-                    <button id="btn-mobile" aria-label="Abrir Menu" class="btn-mobile" aria-haspopup="true"
-                        aria-controls="menu" aria-expanded="false">Menu
-                        <span class="hamburger"></span>
-                    </button>
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projetos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Habilidades</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contato</a>
-                        </li>
-                        <li class="nav-item">
-                            <div class="on-off">
-                                <input type="checkbox" class="on-off--checkbox" id="on-off" name="theme">
-                                <label for="on-off" class="on-off--button"></label>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-
-            </div>
-        </div>
-        <div class="intro-main">
-            <div class="intro-text">
-                <p class="intro-p">Olá, sou</p>
-                <h1 class="intro-title">Vinicius Jangeli</h1>
-                <h2 class="intro-subtitle">Desenvolvedor Front-end.</h2>
-                <div class="intro-buttons">
-                    <button class="intro-button">Fale comigo</button>
-                    <a class="intro-button" href="https://www.linkedin.com/in/viniciusjangeli/" target="_blank">Linkedin</a>
-                </div>
-            </div>
-            <div class="intro-img">
-                <img id="intro-img" class="img-intro" src="./assets/img-intro.svg"
-                    alt="Desenho de uma pessoa usando um notebook.">
-            </div>
-        </div>
+    <header id="home" class="header">
+        <img class="header_logo" src="./assets/img/logo.svg" alt="Logo Vinicius Jangeli">
+        <nav id="nav" class="header__nav">
+            <button id="btn-mobile" aria-label="Abrir Menu" class="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="#about">Sobre</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#projects">Projetos</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#skills">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav__link" href="#contact">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="" class="header__button">Currículo</a>
     </header>
     <main class="main-content">
+        <section class="intro">
+            <div class="intro__text">
+                <p class="intro__p">Olá, sou</p>
+                <h1 class="intro__title">Vinicius Jangeli</h1>
+                <p class="intro__subtitle">Desenvolvedor Front-end.</p>
+            </div>
+        </section>
         <section id="about" class="about">
-            <div class="about-infos">
-                <div class="selfie">
-                    <img class="img-selfie" src="./assets/IMG_7949-removebg-preview.png" alt="Foto de Vinicius Jangeli">
-                </div>
+            <h1 class="title-section">Sobre</h1>
+            <h2 class="subtitle-section">Quem é Vinicius Jangeli?</h2>
+            <div class="about__infos">
+                <img class="selfie" src="./assets/img/fotoVinicius.png" alt="Foto de Vinicius Jangeli">
                 <div class="about-desc">
-                    <h2 class="about-name">Vinicius Jangeli</h2>
-                    <p class="about-age">22 anos</p>
-                    <p class="about-text">Estudante do segundo ano de Engenharia de Software pela <a
-                            class="about-text-link" href="https://www.unicesumar.edu.br/home/"
-                            target="_blank">UniCesumar</a>, começou a escrever seus primeiros códigos HTML para fã-sites
-                        de jogos virtuais no Blogger. Gostou tanto que resolveu se aprofundar mais no mundo Front-end.
+                    <h2 class="about__name">Vinicius Jangeli</h2>
+                    <p class="about__age">22 anos</p>
+                    <p class="about__text">Nascido em Campinas - SP, no final do século XX, ganhou seu primeiro
+                        computador aos 8 anos, e desde então se apaixonou por tecnologia.
+                        Cursa Engenharia de Software pela <a class="about__text-link"
+                            href="https://www.unicesumar.edu.br/home/" target="_blank">UniCesumar</a>.
                     </p>
-                    <div class="courses">
-                        <p class="course-p">Engenharia de Software - <a class="course-link"
-                                href="https://www.unicesumar.edu.br/home/" target="_blank">UniCesumar</a></p>
-                        <p class="course-p">Formação Front-end - <a class="course-link" href="https://www.alura.com.br/"
-                                target="_blank">Alura Cursos</a></p>
-                    </div>
-                    <div class="social-media">
-                        <ul class="media-list">
-                            <li class="media-item">
-                                <a class="hidden-text" href=" https://www.linkedin.com/in/viniciusjangeli/"
-                                    target="_blank">Linkedin</a>
+                    <ul class="media-list">
+                        <li class="media__item">
+                            <a class="media__link" href="https://www.linkedin.com/in/viniciusjangeli/" target="_blank">
+                                <svg class="media__img" width="39" height="39" viewBox="0 0 39 39" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="media__img"
+                                        d="M19.2256 0.789612C8.76051 0.789612 0.274414 9.27448 0.274414 19.7408C0.274414 30.2072 8.76051 38.6921 19.2256 38.6921C29.692 38.6921 38.1769 30.2072 38.1769 19.7408C38.1769 9.27448 29.692 0.789612 19.2256 0.789612ZM12.1128 9.3226C13.4428 9.3226 14.3287 10.2085 14.3287 11.3892C14.3287 12.5712 13.4428 13.4571 11.9659 13.4571C10.6359 13.4583 9.75002 12.5712 9.75002 11.3892C9.75002 10.2085 10.6359 9.3226 12.1128 9.3226ZM14.4878 27.6372H9.75002V15.003H14.4878V27.6372ZM30.2805 27.6372H25.8215V20.7328C25.8215 18.8229 24.6322 18.3824 24.1868 18.3824C23.7414 18.3824 22.2534 18.6761 22.2534 20.7328C22.2534 21.0265 22.2534 27.6372 22.2534 27.6372H17.6464V15.003H22.2546V16.7649C22.8493 15.7371 24.0387 15.003 26.2682 15.003C28.4977 15.003 30.2805 16.7649 30.2805 20.7328V27.6372Z"
+                                        fill="#868686" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="media__item">
+                            <a class="media__link" href="https://github.com/ViniciusJangeli" target="_blank">
+                                <svg class="media__img" width="39" height="39" viewBox="0 0 39 39" fill="#868686"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="media__img"
+                                        d="M18.9512 0C8.48458 0 0 8.61944 0 19.2479C0 28.2684 6.11568 35.8144 14.359 37.9024C14.2692 37.6432 14.2134 37.3414 14.2134 36.9688V33.6778C13.4437 33.6778 12.1556 33.6778 11.8325 33.6778C10.5344 33.6778 9.38189 33.1127 8.82356 32.0596C8.20342 30.891 8.09574 29.1028 6.55636 28.0091C6.09972 27.6446 6.44868 27.2294 6.97311 27.2841C7.9442 27.5636 8.74978 28.24 9.50951 29.2445C10.2632 30.2511 10.6182 30.4779 12.03 30.4779C12.7139 30.4779 13.7368 30.4374 14.7 30.2835C15.2184 28.9488 16.1137 27.7175 17.2084 27.1362C10.8974 26.478 7.88438 23.2883 7.88438 18.9603C7.88438 17.0971 8.66604 15.2926 9.99605 13.7737C9.55936 12.2669 9.011 9.19258 10.1616 8.01997C13.001 8.01997 14.7179 9.89129 15.1307 10.3956C16.5464 9.90344 18.0998 9.62396 19.7329 9.62396C21.368 9.62396 22.9293 9.90344 24.3471 10.3996C24.7558 9.89737 26.4727 8.01997 29.3182 8.01997C30.4747 9.19258 29.9204 12.2811 29.4797 13.7858C30.7997 15.3007 31.5774 17.0991 31.5774 18.9603C31.5774 23.2863 28.5704 26.474 22.2693 27.1362C24.0041 28.0537 25.2683 30.6379 25.2683 32.5821V36.9688C25.2683 37.1349 25.2324 37.2544 25.2125 37.3982C32.5983 34.7694 37.9024 27.6466 37.9024 19.2479C37.9024 8.61944 29.4179 0 18.9512 0Z"
+                                        fill="#868686" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="media__item">
+                            <a class="media__link" href="https://www.instagram.com/devjangeli/" target="_blank">
+                                <svg class="media__img" width="39" height="39" viewBox="0 0 39 39" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="media__img"
+                                        d="M19.5 15.789C17.3211 15.789 15.5481 17.562 15.5481 19.7409C15.5481 21.9198 17.3211 23.6927 19.5 23.6927C21.6789 23.6927 23.4518 21.9198 23.4518 19.7409C23.4518 17.562 21.6789 15.789 19.5 15.789Z"
+                                        fill="#868686" />
+                                    <path class="media__img"
+                                        d="M25.1854 13.5447C24.9028 13.5447 24.6733 13.7742 24.6733 14.0555C24.6733 14.338 24.9028 14.5663 25.1854 14.5663C25.4667 14.5663 25.6962 14.338 25.6962 14.0555C25.6962 13.7742 25.4667 13.5447 25.1854 13.5447Z"
+                                        fill="#868686" />
+                                    <path class="media__img"
+                                        d="M19.5 0.789612C9.05214 0.789612 0.548767 9.29298 0.548767 19.7408C0.548767 30.1887 9.05214 38.6921 19.5 38.6921C29.9478 38.6921 38.4512 30.1887 38.4512 19.7408C38.4512 9.29298 29.9478 0.789612 19.5 0.789612ZM30.3291 23.1523C30.3291 27.2424 27.0015 30.5699 22.9115 30.5699H16.0885C11.9985 30.5699 8.67089 27.2424 8.67089 23.1523V16.3294C8.67089 12.2393 11.9985 8.91174 16.0885 8.91174H22.9115C27.0015 8.91174 30.3291 12.2393 30.3291 16.3294V23.1523Z"
+                                        fill="#868686" />
+                                    <path class="media__img"
+                                        d="M22.9115 10.4626H16.0885C12.8535 10.4626 10.2218 13.0956 10.2218 16.3294V23.1523C10.2218 26.3861 12.8535 29.019 16.0885 29.019H22.9115C26.1453 29.019 28.7782 26.3861 28.7782 23.1523V16.3294C28.7782 13.0956 26.1453 10.4626 22.9115 10.4626ZM19.5 25.2436C16.4661 25.2436 13.9972 22.7748 13.9972 19.7408C13.9972 16.7069 16.4661 14.2381 19.5 14.2381C22.5339 14.2381 25.0028 16.7069 25.0028 19.7408C25.0028 22.7748 22.5339 25.2436 19.5 25.2436ZM25.1854 16.1184C24.0478 16.1184 23.1224 15.193 23.1224 14.0555C23.1224 12.9179 24.0478 11.9938 25.1854 11.9938C26.3217 11.9938 27.2471 12.9179 27.2471 14.0555C27.2471 15.193 26.3229 16.1184 25.1854 16.1184Z"
+                                        fill="#868686" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="media__item">
+                            <a class="media__link" href="https://www.youtube.com/channel/UCEJMWImIg4wk26IYV5sBG0w"
+                                target="_blank">
+                                <?xml version="1.0" ?>
+                                <!DOCTYPE svg
+                                    PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                                <svg class="media__img" height="39"
+                                    style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+                                    version="1.1" viewBox="0 0 512 512" width="39" xml:space="preserve"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path class="media__img" fill="#868686"
+                                        d="M256,0c141.29,0 256,114.71 256,256c0,141.29 -114.71,256 -256,256c-141.29,0 -256,-114.71 -256,-256c0,-141.29 114.71,-256 256,-256Zm153.315,178.978c-3.68,-13.769 -14.522,-24.61 -28.29,-28.29c-24.958,-6.688 -125.025,-6.688 -125.025,-6.688c0,0 -100.067,0 -125.025,6.688c-13.765,3.68 -24.61,14.521 -28.29,28.29c-6.685,24.955 -6.685,77.024 -6.685,77.024c0,0 0,52.067 6.685,77.02c3.68,13.769 14.525,24.614 28.29,28.293c24.958,6.685 125.025,6.685 125.025,6.685c0,0 100.067,0 125.025,-6.685c13.768,-3.679 24.61,-14.524 28.29,-28.293c6.685,-24.953 6.685,-77.02 6.685,-77.02c0,0 0,-52.069 -6.685,-77.024Zm-185.316,125.025l0,-96.002l83.137,48.001l-83.137,48.001Z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
 
-                                <a class="media-link" href="https://www.linkedin.com/in/viniciusjangeli/"
-                                    target="_blank">
-                                    <svg class="media-img" width="39" height="39" viewBox="0 0 39 39" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path class="media-img"
-                                            d="M19.2256 0.789612C8.76051 0.789612 0.274414 9.27448 0.274414 19.7408C0.274414 30.2072 8.76051 38.6921 19.2256 38.6921C29.692 38.6921 38.1769 30.2072 38.1769 19.7408C38.1769 9.27448 29.692 0.789612 19.2256 0.789612ZM12.1128 9.3226C13.4428 9.3226 14.3287 10.2085 14.3287 11.3892C14.3287 12.5712 13.4428 13.4571 11.9659 13.4571C10.6359 13.4583 9.75002 12.5712 9.75002 11.3892C9.75002 10.2085 10.6359 9.3226 12.1128 9.3226ZM14.4878 27.6372H9.75002V15.003H14.4878V27.6372ZM30.2805 27.6372H25.8215V20.7328C25.8215 18.8229 24.6322 18.3824 24.1868 18.3824C23.7414 18.3824 22.2534 18.6761 22.2534 20.7328C22.2534 21.0265 22.2534 27.6372 22.2534 27.6372H17.6464V15.003H22.2546V16.7649C22.8493 15.7371 24.0387 15.003 26.2682 15.003C28.4977 15.003 30.2805 16.7649 30.2805 20.7328V27.6372Z"
-                                            fill="#868686" />
-                                    </svg>
-                                </a>
-
-                            </li>
-                            <li class="media-item">
-                                <a class="hidden-text" href="https://github.com/ViniciusJangeli"
-                                    target="_blank">Github</a>
-
-                                <a class="media-link" href="https://github.com/ViniciusJangeli" target="_blank">
-                                    <svg class="media-img" width="39" height="39" viewBox="0 0 39 39" fill="#868686"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path class="media-img"
-                                            d="M18.9512 0C8.48458 0 0 8.61944 0 19.2479C0 28.2684 6.11568 35.8144 14.359 37.9024C14.2692 37.6432 14.2134 37.3414 14.2134 36.9688V33.6778C13.4437 33.6778 12.1556 33.6778 11.8325 33.6778C10.5344 33.6778 9.38189 33.1127 8.82356 32.0596C8.20342 30.891 8.09574 29.1028 6.55636 28.0091C6.09972 27.6446 6.44868 27.2294 6.97311 27.2841C7.9442 27.5636 8.74978 28.24 9.50951 29.2445C10.2632 30.2511 10.6182 30.4779 12.03 30.4779C12.7139 30.4779 13.7368 30.4374 14.7 30.2835C15.2184 28.9488 16.1137 27.7175 17.2084 27.1362C10.8974 26.478 7.88438 23.2883 7.88438 18.9603C7.88438 17.0971 8.66604 15.2926 9.99605 13.7737C9.55936 12.2669 9.011 9.19258 10.1616 8.01997C13.001 8.01997 14.7179 9.89129 15.1307 10.3956C16.5464 9.90344 18.0998 9.62396 19.7329 9.62396C21.368 9.62396 22.9293 9.90344 24.3471 10.3996C24.7558 9.89737 26.4727 8.01997 29.3182 8.01997C30.4747 9.19258 29.9204 12.2811 29.4797 13.7858C30.7997 15.3007 31.5774 17.0991 31.5774 18.9603C31.5774 23.2863 28.5704 26.474 22.2693 27.1362C24.0041 28.0537 25.2683 30.6379 25.2683 32.5821V36.9688C25.2683 37.1349 25.2324 37.2544 25.2125 37.3982C32.5983 34.7694 37.9024 27.6466 37.9024 19.2479C37.9024 8.61944 29.4179 0 18.9512 0Z"
-                                            fill="#868686" />
-                                    </svg>
-
-                                </a>
-                            </li>
-                            <li class="media-item">
-                                <a class="hidden-text" href="https://www.instagram.com/devjangeli/"
-                                    target="_blank">Instagram</a>
-
-                                <a class="media-link" href="https://www.instagram.com/devjangeli/" target="_blank">
-                                    <svg class="media-img" width="39" height="39" viewBox="0 0 39 39" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path class="media-img"
-                                            d="M19.5 15.789C17.3211 15.789 15.5481 17.562 15.5481 19.7409C15.5481 21.9198 17.3211 23.6927 19.5 23.6927C21.6789 23.6927 23.4518 21.9198 23.4518 19.7409C23.4518 17.562 21.6789 15.789 19.5 15.789Z"
-                                            fill="#868686" />
-                                        <path class="media-img"
-                                            d="M25.1854 13.5447C24.9028 13.5447 24.6733 13.7742 24.6733 14.0555C24.6733 14.338 24.9028 14.5663 25.1854 14.5663C25.4667 14.5663 25.6962 14.338 25.6962 14.0555C25.6962 13.7742 25.4667 13.5447 25.1854 13.5447Z"
-                                            fill="#868686" />
-                                        <path class="media-img"
-                                            d="M19.5 0.789612C9.05214 0.789612 0.548767 9.29298 0.548767 19.7408C0.548767 30.1887 9.05214 38.6921 19.5 38.6921C29.9478 38.6921 38.4512 30.1887 38.4512 19.7408C38.4512 9.29298 29.9478 0.789612 19.5 0.789612ZM30.3291 23.1523C30.3291 27.2424 27.0015 30.5699 22.9115 30.5699H16.0885C11.9985 30.5699 8.67089 27.2424 8.67089 23.1523V16.3294C8.67089 12.2393 11.9985 8.91174 16.0885 8.91174H22.9115C27.0015 8.91174 30.3291 12.2393 30.3291 16.3294V23.1523Z"
-                                            fill="#868686" />
-                                        <path class="media-img"
-                                            d="M22.9115 10.4626H16.0885C12.8535 10.4626 10.2218 13.0956 10.2218 16.3294V23.1523C10.2218 26.3861 12.8535 29.019 16.0885 29.019H22.9115C26.1453 29.019 28.7782 26.3861 28.7782 23.1523V16.3294C28.7782 13.0956 26.1453 10.4626 22.9115 10.4626ZM19.5 25.2436C16.4661 25.2436 13.9972 22.7748 13.9972 19.7408C13.9972 16.7069 16.4661 14.2381 19.5 14.2381C22.5339 14.2381 25.0028 16.7069 25.0028 19.7408C25.0028 22.7748 22.5339 25.2436 19.5 25.2436ZM25.1854 16.1184C24.0478 16.1184 23.1224 15.193 23.1224 14.0555C23.1224 12.9179 24.0478 11.9938 25.1854 11.9938C26.3217 11.9938 27.2471 12.9179 27.2471 14.0555C27.2471 15.193 26.3229 16.1184 25.1854 16.1184Z"
-                                            fill="#868686" />
-                                    </svg>
-
-                                </a>
-                            </li>
-                            <li class="media-item">
-                                <a class="hidden-text" href="https://www.youtube.com/channel/UCEJMWImIg4wk26IYV5sBG0w"
-                                    target="_blank">Youtube</a>
-
-                                <a class="media-link" href="https://www.youtube.com/channel/UCEJMWImIg4wk26IYV5sBG0w"
-                                    target="_blank">
-                                    <?xml version="1.0" ?>
-                                    <!DOCTYPE svg
-                                        PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-                                    <svg class="media-img" height="39"
-                                        style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
-                                        version="1.1" viewBox="0 0 512 512" width="39" xml:space="preserve"
-                                        xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <path class="media-img" fill="#868686"
-                                            d="M256,0c141.29,0 256,114.71 256,256c0,141.29 -114.71,256 -256,256c-141.29,0 -256,-114.71 -256,-256c0,-141.29 114.71,-256 256,-256Zm153.315,178.978c-3.68,-13.769 -14.522,-24.61 -28.29,-28.29c-24.958,-6.688 -125.025,-6.688 -125.025,-6.688c0,0 -100.067,0 -125.025,6.688c-13.765,3.68 -24.61,14.521 -28.29,28.29c-6.685,24.955 -6.685,77.024 -6.685,77.024c0,0 0,52.067 6.685,77.02c3.68,13.769 14.525,24.614 28.29,28.293c24.958,6.685 125.025,6.685 125.025,6.685c0,0 100.067,0 125.025,-6.685c13.768,-3.679 24.61,-14.524 28.29,-28.293c6.685,-24.953 6.685,-77.02 6.685,-77.02c0,0 0,-52.069 -6.685,-77.024Zm-185.316,125.025l0,-96.002l83.137,48.001l-83.137,48.001Z" />
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </section>
         <section id="projects" class="projects">
-            <div class="project-text">
-                <h1 class="title-section">Projetos</h1>
-                <p class="project-subtitle">Aqui você pode os últimos projetos que desenvolvi. <a class="git-link"
-                        href="https://github.com/ViniciusJangeli" target="_blank">Conheça mais projetos, no meu
-                        Github.</a></p>
+            <h1 class="title-section">Projetos</h1>
+            <h2 class="subtitle-section">Aqui você pode os últimos projetos que desenvolvi. <a class="projects__link" href="https://github.com/ViniciusJangeli" target="_blank">Conheça mais projetos, no meu Github.</a></h2>
+            <div class="exemples">
+                <div class="exemples__projects exemples__projects--left">
+                    <div class="project__image">
+                        <img class="projects__img" src="./assets/img/embreve.gif" alt="">
+                    </div>
+                    <div class="project__infos">
+                        <h1 class="infos__title">Em breve</h1>
+                        <h2 class="infos__subtitle">Em breve</h2>
+                        <h3 class="infos__tech-title">Tecnologias utilizadas:</h3>
+                        <p class="infos__tech-subtitle">Em breve</p>
+                        <div class="infos__links">
+                            <a class="infos__button-link" href="" target="_blank">Visualizar</a>
+                            <a class="infos__button-link" href="" target="_blank">Github</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="exemples__projects exemples__projects--right">
+                    <div class="project__image">
+                        <img class="projects__img" src="./assets/img/embreve.gif" alt="">
+                    </div>
+                    <div class="project__infos">
+                        <h1 class="infos__title">Em breve</h1>
+                        <h2 class="infos__subtitle">Em breve</h2>
+                        <h3 class="infos__tech-title">Tecnologias utilizadas:</h3>
+                        <p class="infos__tech-subtitle">Em breve</p>
+                        <div class="infos__links">
+                            <a class="infos__button-link" href="" target="_blank">Visualizar</a>
+                            <a class="infos__button-link" href="" target="_blank">Github</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="exemples">
-                <div class="project-exemples left">
-                    <div class="project-image">
-                        <img class="img-exemple" src="./assets/breve.jpg" alt="Imagem ecrito 'em breve' em vermelho">
+                <div class="exemples__projects exemples__projects--left">
+                    <div class="project__image">
+                        <img class="projects__img" src="./assets/img/embreve.gif" alt="">
                     </div>
-                    <div class="project-infos">
-                        <h1 class="infos-title">Em breve</h1>
-                        <h2 class="infos-subtitle">Em breve</h2>
-                        <div class="info-techs">
-                            <h3 class="techs-title">Tecnologias utilizadas:</h3>
-                            <p>Em breve</p>
-                        </div>
-                        <div class="infos-links">
-                            <a class="infos-button-link" href="" target="_blank">Visualizar</a>
-                            <a class="infos-button-link" href="" target="_blank">Projeto no Github</a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="project-exemples right" data-anime="bottom">
-                    <div class="project-image">
-                        <img class="img-exemple" src="./assets/breve.jpg" alt="Imagem ecrito 'em breve'">
-                    </div>
-                    <div class="project-infos">
-                        <h1 class="infos-title">Em breve</h1>
-                        <h2 class="infos-subtitle">Em breve</h2>
-                        <div class="info-techs">
-                            <h3 class="techs-title">Tecnologias utilizadas:</h3>
-                            <p>Em breve</p>
-                        </div>
-                        <div class="infos-links">
-                            <a class="infos-button-link" href="" target="_blank">Visualizar</a>
-                            <a class="infos-button-link" href="" target="_blank">Projeto no Github</a>
+                    <div class="project__infos">
+                        <h1 class="infos__title">Em breve</h1>
+                        <h2 class="infos__subtitle">Em breve</h2>
+                        <h3 class="infos__tech-title">Tecnologias utilizadas:</h3>
+                        <p class="infos__tech-subtitle">Em breve</p>
+                        <div class="infos__links">
+                            <a class="infos__button-link" href="" target="_blank">Visualizar</a>
+                            <a class="infos__button-link" href="" target="_blank">Github</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="line"></div>
-            <div class="exemples">
-                <div class="project-exemples left">
-                    <div class="project-image">
-                        <img class="img-exemple" src="./assets/breve.jpg" alt="Imagem ecrito 'em breve' em vermelho">
+                <div class="exemples__projects exemples__projects--right">
+                    <div class="project__image">
+                        <img class="projects__img" src="./assets/img/embreve.gif" alt="">
                     </div>
-                    <div class="project-infos">
-                        <h1 class="infos-title">Em breve</h1>
-                        <h2 class="infos-subtitle">Em breve</h2>
-                        <div class="info-techs">
-                            <h3 class="techs-title">Tecnologias utilizadas:</h3>
-                            <p>Em breve</p>
-                        </div>
-                        <div class="infos-links">
-                            <a class="infos-button-link" href="" target="_blank">Visualizar</a>
-                            <a class="infos-button-link" href="" target="_blank">Projeto no Github</a>
+                    <div class="project__infos">
+                        <h1 class="infos__title">Em breve</h1>
+                        <h2 class="infos__subtitle">Em breve</h2>
+                        <h3 class="infos__tech-title">Tecnologias utilizadas:</h3>
+                        <p class="infos__tech-subtitle">Em breve</p>
+                        <div class="infos__links">
+                            <a class="infos__button-link" href="" target="_blank">Visualizar</a>
+                            <a class="infos__button-link" href="" target="_blank">Projeto no Github</a>
                         </div>
                     </div>
                 </div>
-                <div class="project-exemples right" data-anime="bottom">
-                    <div class="project-image">
-                        <img class="img-exemple" src="./assets/breve.jpg" alt="Imagem ecrito 'em breve' em vermelho">
-                    </div>
-                    <div class="project-infos">
-                        <h1 class="infos-title">Em breve</h1>
-                        <h2 class="infos-subtitle">Em breve</h2>
-                        <div class="info-techs">
-                            <h3 class="techs-title">Tecnologias utilizadas:</h3>
-                            <p>Em breve</p>
-                        </div>
-                        <div class="infos-links">
-                            <a class="infos-button-link" href="" target="_blank">Visualizar</a>
-                            <a class="infos-button-link" href="" target="_blank">Projeto no Github</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
             </div>
         </section>
         <section id="skills" class="skills">
-            <h1 class="title-section">Linguagens e Ferramentas</h1>
-            <div class="tools-list">
-                <div class="tools-item">
-                    <div class="tools-top">
-                        <h1 class="tools-title">Html</h1>
-                        <img class="tools-icon" src="./assets/html-icon.svg" alt="Icone do html">
+            <h1 class="title-section">Habilidades</h1>
+            <h2 class="subtitle-section">Saiba quais são as ferramentas e linguagens de programação que eu utilizo.</h2>
+            <div class="skills__list">
+                <div class="skills__item">
+                    <div class="skills__top">
+                        <h1 class="skills__title">Html</h1>
+                        <img class="skills__icon" src="./assets/img/html-icon.svg" alt="Icone do html">
                     </div>
-                    <div class="tools-bottom">
-                        <p class="tools-text">HTML é uma linguagem de marcação utilizada na construção de páginas na
+                    <div class="skills__bottom">
+                        <p class="skills__text">HTML é uma linguagem de marcação utilizada na construção de páginas na
                             Web.</p>
                     </div>
                 </div>
-                <div class="tools-item">
-                    <div class="tools-top">
-                        <h1 class="tools-title">Css</h1>
-                        <img class="tools-icon" src="./assets/css-icon.svg" alt="Icone do html">
+                <div class="skills__item">
+                    <div class="skills__top">
+                        <h1 class="skills__title">Css</h1>
+                        <img class="skills__icon" src="./assets/img/css-icon.svg" alt="Icone do html">
                     </div>
-                    <div class="tools-bottom">
-                        <p class="tools-text">O CSS é uma linguagem criada com o propósito de estilizar as páginas HTML.
+                    <div class="skills__bottom">
+                        <p class="skills__text">O CSS é uma linguagem criada com o propósito de estilizar as páginas HTML.
                         </p>
                     </div>
                 </div>
-                <div class="tools-item">
-                    <div class="tools-top">
-                        <h1 class="tools-title">Java<br>script</h1>
-                        <img class="tools-icon" src="./assets/js-icon.svg" alt="Icone do html">
+                <div class="skills__item">
+                    <div class="skills__top">
+                        <h1 class="skills__title">Java<br>script</h1>
+                        <img class="skills__icon" src="./assets/img/js-icon.svg" alt="Icone do html">
                     </div>
-                    <div class="tools-bottom">
-                        <p class="tools-text">O JS permite que usuários interajam com uma página e a torne muito mais
+                    <div class="skills__bottom">
+                        <p class="skills__text">O JS permite que usuários interajam com uma página e a torne muito mais
                             dinâmica.</p>
                     </div>
                 </div>
-                <div class="tools-item">
-                    <div class="tools-top">
-                        <h1 class="tools-title">Python</h1>
-                        <img class="tools-icon" src="./assets/python-icon.svg" alt="Icone do html">
+                <div class="skills__item">
+                    <div class="skills__top">
+                        <h1 class="skills__title">Python</h1>
+                        <img class="skills__icon" src="./assets/img/python-icon.svg" alt="Icone do html">
                     </div>
-                    <div class="tools-bottom">
-                        <p class="tools-text">Python é uma linguagem de uso geral, que pode ser utilizada para diversas
+                    <div class="skills__bottom">
+                        <p class="skills__text">Python é uma linguagem de uso geral, que pode ser utilizada para diversas
                             aplicações.</p>
                     </div>
                 </div>
-                <div class="tools-item">
-                    <div class="tools-top">
-                        <h1 class="tools-title">Sql</h1>
-                        <img class="tools-icon" src="./assets/sql-icon.svg" alt="Icone do html">
+                <div class="skills__item">
+                    <div class="skills__top">
+                        <h1 class="skills__title">Sql</h1>
+                        <img class="skills__icon" src="./assets/img/sql-icon.svg" alt="Icone do html">
                     </div>
-                    <div class="tools-bottom">
-                        <p class="tools-text">SQL é uma linguagem padrão para trabalhar com bancos de dados relacionais.
+                    <div class="skills__bottom">
+                        <p class="skills__text">SQL é uma linguagem padrão para trabalhar com bancos de dados relacionais.
                         </p>
                     </div>
                 </div>
-                <div class="tools-item">
-                    <div class="tools-top">
-                        <h1 class="tools-title">Photo<br>shop</h1>
-                        <img class="tools-icon" src="./assets/ps-icon.svg" alt="Icone do html">
+                <div class="skills__item">
+                    <div class="skills__top">
+                        <h1 class="skills__title">Photo<br>shop</h1>
+                        <img class="skills__icon" src="./assets/img/ps-icon.svg" alt="Icone do html">
                     </div>
-                    <div class="tools-bottom">
-                        <p class="tools-text">O Photoshop é um editor de imagens, com capacidade para manipular os
+                    <div class="skills__bottom">
+                        <p class="skills__text">O Photoshop é um editor de imagens, com capacidade para manipular os
                             vetores.</p>
                     </div>
                 </div>
@@ -316,40 +265,41 @@
         </section>
         <section id="contact" class="contact">
             <h1 class="title-section">Contato</h1>
-            <form class="form-contact" action="./scripts/contact.js">
-                <div class="form-item">
+            <h2 class="subtitle-section">Entre em contato comigo.</h2>
+            <form class="contact__form" action="">
+                <div class="form__item">
                     <label for="name">Nome</label>
-                    <input type="text" id="name" placeholder="Seu nome" name="contact_name" required>
+                    <input type="text" id="name" placeholder="Seu nome" required>
                 </div>
-                <div class="form-item">
+                <div class="form__item">
                     <label for="email">Email</label>
-                    <input type="text" id="email" placeholder="seuemail@seudominio.com"  name="contact_email" required>
+                    <input type="text" id="email" placeholder="seuemail@seudominio.com" required>
                 </div>
-                <div class="form-item">
+                <div class="form__item">
                     <label for="number">Número</label>
-                    <input style="margin-bottom: 5px;" type="tel" id="number" pattern="[0-9]{11}"
-                        maxlength="11" placeholder="(XX) XXXXX-XXXX" name="contact_number" required>
-                    <div class="checkbox-contact">
+                    <input style="margin-bottom: 5px;" type="tel" id="number" pattern="[0-9]{2} [0-9]{5} [0-9]{4}"
+                        maxlength="11" placeholder="(XX) XXXXX-XXXX" required>
+                    <div class="checkbox__contact">
                         <input type="checkbox" name="whatsapp" id="whatsapp">
                         <label for="whatsapp">Aceito contato via Whatsapp.</label>
                     </div>
+
+
                 </div>
-                <div class="form-item">
+                <div class="form__item">
                     <label for="message">Mensagem</label>
-                    <textarea name="contact_message" id="message" cols="30" rows="10" placeholder="Sua mensagem aqui."
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Sua mensagem aqui."
                         required></textarea>
                 </div>
-                <input type="submit" value="Enviar" class="form-submit">
+                <input type="submit" value="Enviar" class="form__submit">
             </form>
         </section>
 
     </main>
     <footer>
-        <p class="copy-phrase">&copy; Vinicius Jangeli - 2022</p>
+        <p class="copy-phrase">&copy; 2022 - Vinicius Jangeli</p>
     </footer>
 
-    <script src="./scripts/contact.js"></script>
-    <script src="./scripts/script.js"></script>
 </body>
 
 </html>
