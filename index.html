@@ -19,6 +19,26 @@
     <link rel="stylesheet" href="./assets/css/main/skills.css">
     <link rel="stylesheet" href="./assets/css/main/contact.css">
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('ZXmSct0MQNVR_cE29');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                emailjs.sendForm('gmailMessage', 'template_onhutnk', this)
+                    .then(function() {
+                        alert('Mensagem enviada com sucesso!');
+                    }, function(error) {
+                        alert('Ocorreu algum erro, tente novamente!');
+                    });
+            });
+        }
+    </script>
+
     <title>Vinicius Jangeli - Desenvolvedor Front-end</title>
 </head>
 
@@ -272,31 +292,29 @@
         <section id="contact" class="contact">
             <h1 class="title-section">Contato</h1>
             <h2 class="subtitle-section">Entre em contato comigo.</h2>
-            <form id="contactForm" class="contact__form" method="post">
+            <form id="contact-form" class="contact__form">
                 <div class="form__item">
                     <label for="name">Nome</label>
-                    <input type="text" id="name" placeholder="Seu nome" required>
+                    <input name="name" type="text" id="name" placeholder="Seu nome" required>
                 </div>
                 <div class="form__item">
                     <label for="email">Email</label>
-                    <input type="text" id="email" placeholder="seuemail@seudomínio.com" required>
+                    <input name="email" type="text" id="email" placeholder="seuemail@seudomínio.com" required>
                 </div>
                 <div class="form__item">
                     <label for="number">Número</label>
-                    <input style="margin-bottom: 5px;" type="tel" id="number" placeholder="(XX) XXXXX-XXXX" required>
+                    <input name="number" style="margin-bottom: 5px;" type="tel" id="number" placeholder="(XX) XXXXX-XXXX" required>
                     <div class="checkbox__contact">
-                        <input type="checkbox" name="whatsapp" id="whatsapp">
+                        <input type="checkbox" name="whatsapp" id="whatsapp" value="sim">
                         <label for="whatsapp">Aceito contato via Whatsapp.</label>
                     </div>
-
-
                 </div>
                 <div class="form__item">
                     <label for="message">Mensagem</label>
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Sua mensagem aqui."
                         required></textarea>
                 </div>
-                <input type="submit" value="Enviar" class="form__submit">
+                <input class="form__submit" type="submit" value="Enviar">
             </form>
         </section>
     </main>
