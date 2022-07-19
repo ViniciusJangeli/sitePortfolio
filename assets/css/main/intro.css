@@ -20,6 +20,7 @@
     color: #2e3b47;
     display: flex;
     font-size: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .intro__text::after {
@@ -34,4 +35,49 @@
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+@media screen and (min-width: 425px) {
+    
+    .intro {
+        padding: 0;
+    }
+
+    .intro__p, .intro__subtitle {
+        font-size: 1.625rem;
+    }
+
+    .intro__title {
+        font-size: 2.8rem;
+    }
+
+}
+
+@media screen and (min-width: 620px) {
+
+    .intro__p, .intro__subtitle {
+        font-size: 2rem;
+    }
+
+    .intro__title {
+        font-size: 3rem;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    
+
+    .intro__p, .intro__subtitle {
+        font-size: 2.5rem;
+    }
+
+    .intro__title {
+        font-size: 5rem;
+    }
+
+    .intro__text::before, .intro__text::after {
+        font-size: 2rem;
+    }
+
 }

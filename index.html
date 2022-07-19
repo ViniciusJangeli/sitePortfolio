@@ -40,12 +40,17 @@
                 <li class="nav__item">
                     <a class="nav__link" href="#skills">Habilidades</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav__item">
                     <a class="nav__link" href="#contact">Contato</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link header__button--link" href="#contact">Currículo</a>
                 </li>
             </ul>
         </nav>
-        <a href="" class="header__button">Currículo</a>
+        <div class="header__button">
+            <a href="#" class="header__button--link">Currículo</a>
+        </div>
     </header>
     <main class="main-content">
         <section class="intro">
@@ -60,7 +65,7 @@
             <h2 class="subtitle-section">Quem é Vinicius Jangeli?</h2>
             <div class="about__infos">
                 <img class="selfie" src="./assets/img/fotoVinicius.png" alt="Foto de Vinicius Jangeli">
-                <div class="about-desc">
+                <div class="about__desc">
                     <h2 class="about__name">Vinicius Jangeli</h2>
                     <p class="about__age">22 anos</p>
                     <p class="about__text">Nascido em Campinas - SP, no final do século XX, ganhou seu primeiro
@@ -148,7 +153,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="exemples__projects exemples__projects--right">
+                <div class="exemples__projects exemples__projects--right" data-anime="bottom">
                     <div class="project__image">
                         <img class="projects__img" src="./assets/img/embreve.gif" alt="">
                     </div>
@@ -164,6 +169,7 @@
                     </div>
                 </div>
             </div>
+            <div class="exemples__line"></div>
             <div class="exemples">
                 <div class="exemples__projects exemples__projects--left">
                     <div class="project__image">
@@ -180,7 +186,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="exemples__projects exemples__projects--right">
+                <div class="exemples__projects exemples__projects--right" data-anime="bottom">
                     <div class="project__image">
                         <img class="projects__img" src="./assets/img/embreve.gif" alt="">
                     </div>
@@ -191,7 +197,7 @@
                         <p class="infos__tech-subtitle">Em breve</p>
                         <div class="infos__links">
                             <a class="infos__button-link" href="" target="_blank">Visualizar</a>
-                            <a class="infos__button-link" href="" target="_blank">Projeto no Github</a>
+                            <a class="infos__button-link" href="" target="_blank">Github</a>
                         </div>
                     </div>
                 </div>
@@ -273,7 +279,7 @@
                 </div>
                 <div class="form__item">
                     <label for="email">Email</label>
-                    <input type="text" id="email" placeholder="seuemail@seudominio.com" required>
+                    <input type="text" id="email" placeholder="seuemail@seudomínio.com" required>
                 </div>
                 <div class="form__item">
                     <label for="number">Número</label>
@@ -294,12 +300,13 @@
                 <input type="submit" value="Enviar" class="form__submit">
             </form>
         </section>
-
     </main>
     <footer>
         <p class="copy-phrase">&copy; 2022 - Vinicius Jangeli</p>
     </footer>
 
+    <script src="./assets/scripts/menu.js"></script>
+    <script src="./assets/scripts/scroll-animation.js"></script>
 </body>
 
 </html>

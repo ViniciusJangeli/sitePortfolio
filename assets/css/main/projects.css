@@ -1,5 +1,8 @@
 .projects {
+    align-items: center;
     color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
     padding-bottom: 1rem;
 }
 
@@ -13,6 +16,7 @@
 }
 
 .exemples {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
 }
@@ -94,6 +98,111 @@
     background-color: #05b660;
 }
 
+.exemples__line {
+    border: 1px solid #1d262e;
+    width: 80vw;
+}
+
 .exemples__projects--right {
     display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .exemples__projects {
+        height: 450px;
+        width: 520px;
+        
+    }
+
+    .project__image, .projects__img {
+        height: 250px;
+        width: 470px;
+    }
+
+    .project__infos {
+        left: -120px;
+        position: relative;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .exemples {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .exemples__projects {
+        height: 480px;
+        width: 550px;
+    }
+
+    .project__image, .projects__img {
+        height: 270px;
+        width: 490px;
+    }
+
+    .project__infos {
+        left: -130px;
+        position: relative;
+    }
+
+    .exemples__projects--left {
+        left: -150px;
+        position: relative;
+    }
+
+    .exemples__projects--right {
+        display: flex;
+        margin-bottom: -185px;
+        position: relative;
+        right: -150px;
+        top: -218px;
+    }
+
+    .exemples__line {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .exemples__projects {
+        height: 520px;
+        width: 650px;
+    }
+
+    .project__image, .projects__img {
+        height: 320px;
+        width: 590px;
+    }
+
+    .project__infos {
+        left: -180px;
+        position: relative;
+    }
+
+    .exemples__projects--right {
+        top: -213px;
+    }
+
+}
+
+/* Animation */
+
+[data-anime] {
+    opacity: 0;
+    transition: .8s;
+}
+
+
+[data-anime="bottom"] {
+    transform: translate3d(0, 200px, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
 }
