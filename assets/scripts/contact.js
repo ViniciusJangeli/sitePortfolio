@@ -18,13 +18,9 @@ export const ContactUs = () => {
 
   return (
     <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
       <input type="text" name="name" />
-      <label>Email</label>
       <input type="email" name="email" />
-      <label>Number</label>
       <input type="tel" name="number" />
-      <label>Message</label>
       <textarea name="message" />
       <input type="submit" value="send" />
     </form>
